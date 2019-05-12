@@ -5,7 +5,6 @@ $('document').ready(function (){
 	$container.append($items);
 	$container.masonry({
 	  itemSelector: '.grid-item',
-	  // columnWidth: 400,
 	  percentPosition: true
 	});
 

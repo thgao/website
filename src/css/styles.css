@@ -1,28 +1,101 @@
-
+/* Extra small devices (phones, less than 768px) */
 h1 {
-	/* Extra small devices (phones, less than 768px) */
-	font-size: 76px;
+	font-size: 50px;
 	font-family: 'geometosregular';
 }
 .grid-item {
 	float: left;
-  max-width: 100%;
-  border: 2px solid #EEE;
-  object-fit: contain;
+	max-width: 100%;
+	border: 2px solid #EEE;
+	object-fit: contain;
 }
+.menuitem { 
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	min-height: 300px;
+	width:100%;
+	padding: 0;
+	margin:0;
+	/*border-radius: 0;*/
+	background-size: 800px;
+}
+
+.menuitemhalf { 
+	display: flex;
+	flex-flow: row;
+	height: 50%;
+	min-height: 300px;
+	width:100%;
+	/*border-radius: 0;*/
+	background-size: 800px;
+}
+
+.menuitem:after {
+	content: attr(data-content);
+	color: white;
+	font-size: 40px;
+	text-decoration:none;
+	font-family: 'geometosregular';
+	text-align: center;
+	padding-top:27%;
+	position: relative;
+	width: 100%; height:100%;
+	top:0; left:0;
+	background:rgba(0,0,0,0.6);
+	opacity: 0;
+	transition:  1ms;
+	-webkit-transition: all 0.4s;
+}
+
+.menuitem:hover:after{
+	opacity: 1;
+}
+
+.menuitemhalf:after {
+	content: attr(data-content);
+	color: white;
+	font-size: 40px;
+	text-decoration:none;
+	font-family: 'geometosregular';
+	text-align: center;
+	padding-top:27%;
+	position: absolute;
+	width: 100%; height:100%;
+	top:0; left:0;
+	background:rgba(0,0,0,0.6);
+	opacity: 0;
+	transition:  1ms;
+	-webkit-transition: all 0.4s;
+}
+.menuitemhalf:hover:after{
+	opacity: 1;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	h1{
-		font-size: 80px;
+		font-size: 70px;
 		font-family: 'geometosregular';
 	}
 	.grid-item {
-		float: left;
-  max-width: 100%;
-  border: 2px solid #EEE;
-  object-fit: contain;
-}
+		max-width: 100%;
+	}
+	.menuitem { 
+		background-size: 1000px;
+	}
 
+	.menuitemhalf { 
+		background-size: 1000px;
+	}
+	.menuitem:after {
+		font-size: 80px;
+		padding-top:12%;
+	}
+	.menuitemhalf:after {
+		font-size: 80px;
+		padding-top:12%;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -32,10 +105,22 @@ h1 {
 		font-family: 'geometosregular';
 	}
 	.grid-item {
-		float: left;
-	  	max-width: 50%;
-	  	border: 2px solid #EEE;
-	  	object-fit: contain;
+		max-width: 50%;
+	}
+	.menuitem { 
+		background-size: 600px;
+	}
+
+	.menuitemhalf { 
+		background-size: 500px;
+	}
+	.menuitem:after {
+		font-size: 50px;
+		padding-top:50%;
+	}
+	.menuitemhalf:after {
+		font-size: 34px;
+		padding-top:30%;
 	}
 }
 
@@ -47,10 +132,22 @@ h1 {
 	}
 
 	.grid-item {
-		float: left;
-	  max-width: 50%;
-	  border: 2px solid #EEE;
-	  object-fit: contain;
+		max-width: 50%;
+	}
+	.menuitem { 
+		background-size: 700px;
+	}
+
+	.menuitemhalf { 
+		background-size: 600px;
+	}
+	.menuitem:after {
+		font-size: 80px;
+		padding-top:27%;
+	}
+	.menuitemhalf:after {
+		font-size: 55px;
+		padding-top:18%;
 	}
 }
 
@@ -69,92 +166,27 @@ h1 {
 	clear: both;
 }
 
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
- }
-
-.menuitem { 
-	display: flex;
-  	flex-flow: column;
-  	height: 95%;
-	min-height: 300px;
-	width:100%;
-	padding: 0;
-	margin:0;
-	/*border-radius: 0;*/
-	background-size: 800px;
-}
-
-.menuitemhalf { 
-	display: flex;
-  	flex-flow: row;
-  	height: 50%;
-  	min-height: 300px;
-  	/*width:100%;*/
-	/*border-radius: 0;*/
-	background-size: 600px;
-}
-
-.menuitem:after {
-    content: attr(data-content);
-    color: white;
-    font-size: 80px;
-    text-decoration:none;
-		font-family: 'geometosregular';
-		text-align: center;
-		padding-top:27%;
-		    position: relative;
-    width: 100%; height:100%;
-    top:0; left:0;
-    background:rgba(0,0,0,0.6);
-    opacity: 0;
-    transition:  1ms;
-    -webkit-transition: all 0.4s;
-}
-
-.menuitem:hover:after{
-	opacity: 1;
-}
-
-.menuitemhalf:after {
-    content: attr(data-content);
-    color: white;
-    font-size: 60px;
-     text-decoration:none;
-		font-family: 'geometosregular';
-		text-align: center;
-		padding-top:18%;
-    position: absolute;
-    width: 100%; height:100%;
-    top:0; left:0;
-    background:rgba(0,0,0,0.6);
-    opacity: 0;
-    transition:  1ms;
-    -webkit-transition: all 0.4s;
-}
-.menuitemhalf:hover:after{
-	opacity: 1;
-}
-
-
 .page-header {
 	padding: 0;
 	margin: 0;
 	background-image: url('../../src/assets/floral-fabric-pattern1.jpg');
 	height: 50px;
+}
+
+.nav-pills .pill-1 .nav-link:not(.active) {
+    background-color: white;
+    color:  #7d0cb2;
+}
+.nav-pills .pill-1 .nav-link {
+    background-color: #7d0cb2;
+    color: white;
+}
+.nav-pills .pill-1 .nav-link:not(.active):hover {
+    background-color: #ebe6ed;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 body {
