@@ -18,17 +18,17 @@ h1 {
 	padding: 0;
 	margin:0;
 	/*border-radius: 0;*/
-	background-size: 800px;
+	background-size: 100%;
 }
 
 .menuitemhalf { 
 	display: flex;
 	flex-flow: row;
-	height: 50%;
+	height: 100%;
 	min-height: 300px;
 	width:100%;
 	/*border-radius: 0;*/
-	background-size: 800px;
+	background-size: 100%;
 }
 
 .menuitem:after {
@@ -81,13 +81,6 @@ h1 {
 	.grid-item {
 		max-width: 100%;
 	}
-	.menuitem { 
-		background-size: 1000px;
-	}
-
-	.menuitemhalf { 
-		background-size: 1000px;
-	}
 	.menuitem:after {
 		font-size: 80px;
 		padding-top:12%;
@@ -106,13 +99,6 @@ h1 {
 	}
 	.grid-item {
 		max-width: 50%;
-	}
-	.menuitem { 
-		background-size: 600px;
-	}
-
-	.menuitemhalf { 
-		background-size: 500px;
 	}
 	.menuitem:after {
 		font-size: 50px;
@@ -133,13 +119,6 @@ h1 {
 
 	.grid-item {
 		max-width: 50%;
-	}
-	.menuitem { 
-		background-size: 700px;
-	}
-
-	.menuitemhalf { 
-		background-size: 600px;
 	}
 	.menuitem:after {
 		font-size: 80px;
