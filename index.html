@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="icon" type="image/png" href="src/assets/logo.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="src/css/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -13,6 +14,7 @@
 </head>
 <body style="margin: 0;">
 	<div id="home">
+		<div style="display: flex; min-height: 100vh; flex-direction: column;">
 		<div class="page-header" style="margin-bottom:0;padding: 0;">
 		</div>
 
@@ -23,51 +25,49 @@
 				</div>	
 			</div>
 		</div>
-
-		<div class="container-fluid" style="padding:30px; margin:0; ">
-			<div class="row"style = "overflow: hidden;">
-				<div class="col-lg-3" style = "padding-bottom: 0px">
-					<div class="thumbnail " style="padding:0">
-						<img src="src/assets/me.jpg">
-					</div>
-					<br>
-					<h2>About Me</h2>
-					<H6>I'm a software engineering student with a passion for art. Here you can find a sample of some of my art including paintings, digital drawings, photography, and more! <br><br>Click on an image to view more of my work.</H6><br>
-				</div>
-
-				<div class="col-lg-9">
-					<div class="row h-100" style="padding-right: 15px">
-						<div class="col-lg-7" style="padding-left:0; margin-bottom: 10px; ">
-							<a href= "traditional.html" style = "text-decoration:none; ">
-								<div class="menuitem" style="background-image: url(src/assets/traditional/5.jpg);" data-content="Traditional Art"></div>
-							</a>
+			<div class="container-fluid h-100" style="padding:30px; margin:0; flex:1; padding-bottom: 0">
+				<div class="row h-100">
+					<div class="col-lg-3 " style = "padding-bottom: 0px;">
+						<div class="thumbnail " style="padding:0">
+							<img src="src/assets/me.jpg">
 						</div>
-						<div class="col-lg-5">
-							<div class="row h-100">
-								<div class="col-lg-12" style="margin-bottom: 10px; padding:0; margin-right:15px;">
-									<a href="digital.html" style = "text-decoration:none;">
-										<div class="menuitemhalf" style="background-image: url(src/assets/digital/3.jpg);" data-content="Digital Art"></div>
-									</a>
-								</div>
-								<div class="col-lg-12" style="margin-bottom: 10px; padding:0; margin-right: 15px">
-									<a href="photography.html" style = "text-decoration:none;">
-										<div class="menuitemhalf" style="background-image: url(src/assets/photography/5.jpg);" data-content="Photography"></div>
-									</a>
+						<br>
+						<h2>About Me</h2>
+						<H5>I'm a software engineering student with a passion for art. Here you can find a sample of some of my art including paintings, digital drawings, photography, and more! <br><br>Click on an image to view more of my work.</H5><br>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="row h-100" style="padding-right: 15px">
+							<div class="col-lg-7" style="padding-left:0; margin-bottom: 10px; ">
+								<a href= "traditional.html" style = "text-decoration:none; ">
+									<div class="menuitem" style="background-image: url(src/assets/traditional/5.jpg);" data-content="Traditional Art"></div>
+								</a>
+							</div>
+							<div class="col-lg-5">
+								<div class="row h-100">
+									<div class="col-lg-12" style="margin-bottom: 10px; padding:0; margin-right:15px;">
+										<a href="digital.html" style = "text-decoration:none;">
+											<div class="menuitemhalf" style="overflow: hidden;background-image: url(src/assets/digital/2.jpg);" data-content="Digital Art"> </div>
+										</a>
+									</div>
+									<div class="col-lg-12" style="margin-bottom: 10px; padding:0; margin-right: 15px">
+										<a href="photography.html" style = "text-decoration:none;">
+											<div class="menuitemhalf" style="background-image: url(src/assets/photography/5.jpg);" data-content="Photography"></div>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				
-				
 			</div>
-		</div>
-		<br>
-		<div class="page-header text-center" style="margin-top: 30px; padding-top: 15px; position: fixed; bottom: 0px; left: 0px; right: 0px;">
+			<div class="page-header text-center" style="padding-top: 15px; margin:0">
 			© Tina Gao 2019
 		</div>
+		
+		</div>
+		
 	</div>
-</div>
 
 </body>
 </html>
