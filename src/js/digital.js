@@ -19,7 +19,7 @@ function getItem(image) {
 }
 
 function getItems() {
-	var images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg'];
+	var images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg'];
 	var imageDiv = "";
 	for (var i = 0; i < images.length; i++){
 		imageDiv += getItem(images[i]);
