@@ -1,0 +1,111 @@
+.menuItemActive {
+    color: Black;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    position: relative;
+    /* width: 50%; */
+    /* height: 100%; */
+    /* overflow: hidden; */
+
+  }
+
+.boxShadowRight {
+    /* max-width: 100%; */
+    /* overflow: hidden; */
+    /* max-height: 100px; */
+    /* object-fit: fill; */
+    
+    box-shadow: 20px 20px #FFCBAE;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+.boxShadowLeft {
+    /* max-height: 500px; */
+    box-shadow: -20px 20px #FFCBAE;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    /* display: block; */
+}
+
+.menuImage {
+    height: 700px;
+    width: 100%;
+}
+
+.menuImageDefault {
+    max-width: 100%;
+}
+
+.menuImageHalf {
+    height: 325px;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 50px;
+   
+    opacity: 0;
+    transition: .3s ease;
+    background-color: black;
+  }
+  
+  .container:hover .overlay {
+    opacity: 0.85;
+  }
+  
+  .text {
+    color: white;
+    font-size: 80px;
+    font-family: 'rockness';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+@font-face {
+	font-family: 'geometosregular';
+	src: url('../assets/fonts/geometos_kit/geometos-webfont.woff2') format('woff2'),
+	url('../assets/fonts/geometos_kit/geometos-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'rockness';
+	src: url('../assets/fonts/rockness/Rockness.woff2') format('woff2'),
+	url('../assets/fonts/rockness/Rockness.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'toronto';
+	src: url('../assets/fonts/toronto/toronto.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
