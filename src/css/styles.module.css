@@ -23,7 +23,7 @@
     box-shadow: 20px 20px #FFCBAE;
     margin-bottom: 50px;
     margin-right: 50px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .boxShadowLeft {
@@ -38,7 +38,7 @@
     position: absolute;
     top: 0;
     bottom: 0px;
-    left: 50px;
+    left: 30px;
     right: 50px;
    
     opacity: 0;
@@ -95,7 +95,12 @@
 }
 
 .navText{
-    font-size: 2vw;
+    font-size: 3vw;
+}
+
+.navbar {
+    padding: 0;
+    margin-top: 20px;
 }
 
 /* md */
@@ -116,7 +121,7 @@
 
     .boxShadowRight {
         margin-right: 50px;
-        margin-left: 50px;
+        margin-left: 30px;
     }
     
     .boxShadowLeft {
@@ -126,7 +131,7 @@
     }
     
     .overlay {
-        left: 50px;
+        left: 30px;
         right: 50px;
     }
     

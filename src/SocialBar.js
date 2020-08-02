@@ -5,8 +5,8 @@ import LinkedinLogo from './assets/linkedinIcon.png';
 
 const topRight = {
     position: 'absolute',
-    top: '40px', 
-    right: '40px',
+    top: '1%', 
+    right: '2%',
     margin: 0,
 }
 
