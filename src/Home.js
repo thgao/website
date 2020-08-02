@@ -32,7 +32,7 @@ class Home extends Component {
                         </div>
                         </Col>
                     <Col md="7" lg="12">
-                        <div style={{ marginLeft: '40px', marginBottom: '30px'}}>
+                        <div style={{ marginLeft: '5%', marginBottom: '30px'}}>
                             <h2 style={{fontSize: '300%', fontWeight: '550', paddingTop: '20px', margin: 0}}>About Me</h2>
                             <h5>I'm a software engineering student with a passion for art. Here you can find a sample of some of my art including paintings, digital drawings, photography, and more!</h5> 
                             <h5>Click on an image to view more of my work or checkout my Github and Linkedin.</h5>
