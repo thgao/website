@@ -18,7 +18,7 @@ class ImageShadow extends Component {
                     </div>
                 </div>
                 <div className={CSS.overlay}>
-                    <div className={CSS.text}>{this.props.alt}</div>
+                    <div className={CSS.overlayText}>{this.props.alt}</div>
                 </div>
             </div>
         )
