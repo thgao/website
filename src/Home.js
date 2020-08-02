@@ -13,16 +13,16 @@ import CSS from './css/styles.module.css';
 class Home extends Component {
     render() {
         return(
-            <div>
+            <Row>
                 <Row>
                     <Col lg="12">
                         <div style={{ padding: 0, margin: 0, width: '100%'}}>
                             <Media style={{maxWidth: '60%'}} object src={Banner} alt="Tina Gao Banner"/>
                             <h1 class={CSS.title}>Tina Gao</h1> 
                         </div>
-                        <SocialBar/>
                     </Col>
                 </Row>
+                <SocialBar/>
                 <Row style={{width: '100%', margin: 0}}>
                     <Col md="12" lg="3">
                         <Row>
@@ -72,7 +72,7 @@ class Home extends Component {
                 <Row style={{width: '100%'}}>
                     <Col style={{width: '100%'}}><p style={{textAlign: 'center'}}>© Tina Gao 2020</p></Col>
                 </Row>
-            </div>
+            </Row>
         )
     }
 }
