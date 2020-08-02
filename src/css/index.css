@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  min-width: 500px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  font-family: 'toronto';
+}
+
+h2 {
+  font-family: 'rockness';
+}
+
+h3 {
+	font-family: 'geometosregular';
+}
+
+@font-face {
+	font-family: 'geometosregular';
+	src: url('../assets/fonts/geometos_kit/geometos-webfont.woff2') format('woff2'),
+	url('../assets/fonts/geometos_kit/geometos-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'rockness';
+	src: url('../assets/fonts/rockness/Rockness.woff2') format('woff2'),
+	url('../assets/fonts/rockness/Rockness.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'toronto';
+	src: url('../assets/fonts/toronto/toronto.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}

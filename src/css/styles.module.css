@@ -1,0 +1,223 @@
+.menuItemActive {
+    color: Black;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    position: relative;
+}
+
+.boxShadowRight {
+    box-shadow: 20px 20px #FFCBAE;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+.boxShadowLeft {
+    box-shadow: -20px 20px #FFCBAE;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 50px;
+    right: 20px;
+   
+    opacity: 0;
+    transition: .3s ease;
+    background-color: black;
+}
+  
+.container:hover .overlay {
+    opacity: 0.85;
+}
+
+.overlayText {
+    color: white;
+    font-size: 80px;
+    font-family: 'rockness';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.menuImageDefault {
+    max-width: 100%;
+}
+
+/* sm */
+.title {        
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    font-size: 600%;
+    margin: 0;
+}
+
+.menuImage {
+    height: 300px;
+    width: 100%;
+}
+
+.menuImageHalf {
+    height: 300px;
+    width: 100%;
+}
+
+.itemTitle {
+    width: 100%;
+    font-size: 70px;
+    font-family: 'rockness';
+    text-align: center;
+    margin-top: '20px';
+}
+
+.navText{
+    font-size: 20px;
+}
+
+/* md */
+@media (min-width:768px) {
+    .title {        
+        top: 30px;
+        left: 90px;
+    }
+    
+    .menuImage {
+        height: 400px;
+    }
+    
+    .menuImageHalf {
+        height: 400px;
+    }
+
+    .boxShadowRight {
+        margin-right: 20px;
+        margin-left: 50px;
+    }
+    
+    .boxShadowLeft {
+        margin-left: 50px;
+        margin-right: 0;
+    }
+    
+    .overlay {
+        left: 50px;
+        right: 20px;
+    }
+    
+    .overlayText {
+        font-size: 80px;
+    }
+
+    .navbar {
+        float: right;
+        padding: 0;
+        margin-top: -10px;
+    }
+}
+
+/* lg */
+@media (min-width:992px) {
+    .title {        
+        top: 50px;
+        font-size: 750%;
+    }
+
+    .menuImage {
+        height: 700px;
+    }
+    
+    .menuImageHalf {
+        height: 325px;
+    }
+
+    .boxShadowRight {
+        margin-right: 40px;
+        margin-left: 20px;
+    }
+    
+    .boxShadowLeft {
+        margin-left: 50px;
+    }
+    
+    .overlay {
+        left: 20px;
+        right: 40px;
+    }
+    
+    .overlayText {
+        font-size: 60px;
+    }
+
+    .itemTitle {
+        width: 0;
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* xl */
+@media (min-width:1200px) {
+    .title {        
+        position: absolute;
+        top: 60px;
+        left: 90px;
+        font-size: 900%;
+        margin: 0; 
+    }
+
+    .overlayText {
+        font-size: 80px;
+    }
+
+    .navText{
+        font-size: 30px;
+    }
+}
+
+
+@font-face {
+	font-family: 'geometosregular';
+	src: url('../assets/fonts/geometos_kit/geometos-webfont.woff2') format('woff2'),
+	url('../assets/fonts/geometos_kit/geometos-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'rockness';
+	src: url('../assets/fonts/rockness/Rockness.woff2') format('woff2'),
+	url('../assets/fonts/rockness/Rockness.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'toronto';
+	src: url('../assets/fonts/toronto/toronto.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
