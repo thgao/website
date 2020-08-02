@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Container, Media } from 'reactstrap';
+import { Row, Col, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import ProfilePicture from './assets/me.jpg';
 import TraditionalPreview from './assets/traditional/5.jpg';
@@ -16,19 +16,14 @@ class Home extends Component {
             <div>
                 <Row>
                     <Col lg="12">
-                        <Container style={{
-                            padding: 0, 
-                            margin: 0,
-                            position: 'relative',
-                            textAlign: 'center'
-                        }}>
-                            <Media style={{maxWidth: '100%'}} object src={Banner} alt="Tina Gao Banner"/>
+                        <div style={{ padding: 0, margin: 0, width: '100%'}}>
+                            <Media style={{maxWidth: '60%'}} object src={Banner} alt="Tina Gao Banner"/>
                             <h1 class={CSS.title}>Tina Gao</h1> 
-                        </Container>
+                        </div>
                         <SocialBar/>
                     </Col>
                 </Row>
-                <Row style={{width: '100%', height:'auto'}}>
+                <Row style={{width: '100%', margin: 0}}>
                     <Col md="12" lg="3">
                         <Row>
                     <Col md="5" lg="12">

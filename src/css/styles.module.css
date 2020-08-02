@@ -22,15 +22,16 @@
 .boxShadowRight {
     box-shadow: 20px 20px #FFCBAE;
     margin-bottom: 50px;
-    margin-right: 20px;
+    margin-right: 50px;
     margin-left: 50px;
 }
 
 .boxShadowLeft {
     box-shadow: -20px 20px #FFCBAE;
+    margin-top: 30px;
     margin-bottom: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .overlay {
@@ -38,7 +39,7 @@
     top: 0;
     bottom: 0px;
     left: 50px;
-    right: 20px;
+    right: 50px;
    
     opacity: 0;
     transition: .3s ease;
@@ -69,9 +70,9 @@
 /* sm */
 .title {        
     position: absolute;
-    top: 20px;
-    left: 90px;
-    font-size: 600%;
+    top: 10%;
+    left: 8%;
+    font-size: 15vw;
     margin: 0;
 }
 
@@ -94,14 +95,15 @@
 }
 
 .navText{
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 /* md */
 @media (min-width:768px) {
     .title {        
-        top: 30px;
-        left: 90px;
+        top: 10%;
+        left: 8%;
+        font-size: 12vw;
     }
     
     .menuImage {
@@ -113,18 +115,19 @@
     }
 
     .boxShadowRight {
-        margin-right: 20px;
+        margin-right: 50px;
         margin-left: 50px;
     }
     
     .boxShadowLeft {
         margin-left: 50px;
-        margin-right: 0;
+        margin-right: 0px;
+        margin-top: 0;
     }
     
     .overlay {
         left: 50px;
-        right: 20px;
+        right: 50px;
     }
     
     .overlayText {
@@ -141,8 +144,8 @@
 /* lg */
 @media (min-width:992px) {
     .title {        
-        top: 50px;
-        font-size: 750%;
+        top: 15%;
+        font-size: 10vw;
     }
 
     .menuImage {
@@ -160,6 +163,7 @@
     
     .boxShadowLeft {
         margin-left: 50px;
+        margin-right: 0;
     }
     
     .overlay {
@@ -183,9 +187,9 @@
 @media (min-width:1200px) {
     .title {        
         position: absolute;
-        top: 60px;
-        left: 90px;
-        font-size: 900%;
+        top: 20%;
+        left: 8%;
+        font-size: 8vw;
         margin: 0; 
     }
 
@@ -194,7 +198,7 @@
     }
 
     .navText{
-        font-size: 30px;
+        font-size: 1.5vw;
     }
 }
 

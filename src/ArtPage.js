@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Container, Media } from 'reactstrap';
+import { Row, Col, Media } from 'reactstrap';
 import SocialBar from './SocialBar';
 import Menu from './Menu'
 import Masonry from 'react-masonry-css'
@@ -28,15 +28,10 @@ class ArtPage extends Component {
             <Row style={{ width: '100%', margin: 0}}>
                 <Row style={{ width: '100%'}}>
                     <Col>
-                        <Container style={{
-                            padding: 0, 
-                            margin: 0,
-                            position: 'relative',
-                            textAlign: 'center'
-                        }}>
-                            <Media style={{maxWidth: '100%'}} object src={this.props.banner} alt="Tina Gao Banner"/>
+                        <div style={{ padding: 0, margin: 0, width: '100%'}}>
+                            <Media style={{maxWidth: '60%'}}  object src={this.props.banner} alt="Tina Gao Banner"/>
                             <h1 class={CSS.title}>{this.props.title}</h1> 
-                        </Container>
+                        </div>
                         
                     </Col>
                 </Row>
