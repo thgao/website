@@ -103,6 +103,12 @@
     margin-top: 20px;
 }
 
+.aboutMe {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+
 /* md */
 @media (min-width:768px) {
     .title {        
@@ -144,6 +150,10 @@
         padding: 0;
         margin-top: -10px;
     }
+
+    .navText{
+        font-size: 2vw;
+    }
 }
 
 /* lg */
@@ -170,6 +180,10 @@
         margin-left: 50px;
         margin-right: 0;
     }
+
+    .homeMenuButtonCol{
+        padding-right: 50px;
+    }
     
     .overlay {
         left: 20px;
@@ -185,6 +199,11 @@
         font-size: 0;
         margin: 0;
         padding: 0;
+    }
+
+    .aboutMe {
+        margin-left: 12%;
+        margin-right: 0;
     }
 }
 

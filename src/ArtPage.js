@@ -30,7 +30,7 @@ class ArtPage extends Component {
                     <Col>
                         <div style={{ padding: 0, margin: 0, width: '100%'}}>
                             <Media style={{maxWidth: '60%'}}  object src={this.props.banner} alt="Tina Gao Banner"/>
-                            <h1 class={CSS.title}>{this.props.title}</h1> 
+                            <h1 className={CSS.title}>{this.props.title}</h1> 
                         </div>
                         
                     </Col>

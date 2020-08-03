@@ -7,7 +7,7 @@ const images = ['1.jpg', '2.jpg', '3.jpg','4.jpg','5.jpg','6.jpg', '7.jpg', '8.j
 
 const childElements = images.map(function(image){
     return (
-         <div>
+         <div key={image}>
             <img  style={{maxWidth:'100%'}} src={require("./assets/photography/" + image)} alt={image}/>
          </div>
      );

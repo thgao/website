@@ -18,7 +18,7 @@ class Home extends Component {
                     <Col lg="12">
                         <div style={{ padding: 0, margin: 0, width: '100%'}}>
                             <Media style={{maxWidth: '60%'}} object src={Banner} alt="Tina Gao Banner"/>
-                            <h1 class={CSS.title}>Tina Gao</h1> 
+                            <h1 className={CSS.title}>Tina Gao</h1> 
                         </div>
                     </Col>
                 </Row>
@@ -32,7 +32,7 @@ class Home extends Component {
                         </div>
                         </Col>
                     <Col md="7" lg="12">
-                        <div style={{ marginLeft: '5%', marginBottom: '30px'}}>
+                        <div className={CSS.aboutMe}>
                             <h2 style={{fontSize: '300%', fontWeight: '550', paddingTop: '20px', margin: 0}}>About Me</h2>
                             <h5>I'm a software engineering student with a passion for art. Here you can find a sample of some of my art including paintings, digital drawings, photography, and more!</h5> 
                             <h5>Click on an image to view more of my work or checkout my Github and Linkedin.</h5>
@@ -41,11 +41,11 @@ class Home extends Component {
                     </Row>
                     </Col>
                     
-                    <Col lg="9"> 
+                    <Col lg="9" className={CSS.homeMenuButtonCol}> 
                     <Row>
                         <Col lg="7">
                             <Row>
-                                <h2 class={CSS.itemTitle}>Traditional Art</h2>
+                                <h2 className={CSS.itemTitle}>Traditional Art</h2>
                                 <Link to="/traditional">
                                     <ImageShadow src={TraditionalPreview} alt="Traditional Art" button/>
                                 </Link>
@@ -53,20 +53,20 @@ class Home extends Component {
                         </Col>
                         <Col lg="5">
                             <Row>
-                                <h2 class={CSS.itemTitle}>Digital Art</h2>
+                                <h2 className={CSS.itemTitle}>Digital Art</h2>
                                 <Link to="/digital">
                                     <ImageShadow src={DigitalPreview} alt="Digital Art" button half/>
                                 </Link>
                             </Row>
                             <Row>
-                                <h2 class={CSS.itemTitle}>Photography</h2>
+                                <h2 className={CSS.itemTitle}>Photography</h2>
                                 <Link to="/photography">
                                     <ImageShadow src={PhotographyPreview} alt="Photography" button half/>
                                 </Link>
                             </Row>
                             
                         </Col>
-                        </Row>
+                    </Row>
                     </Col>
                 </Row>
                 <Row style={{width: '100%'}}>

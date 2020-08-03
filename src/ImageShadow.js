@@ -14,7 +14,7 @@ class ImageShadow extends Component {
             <div className={hover}>
                 <div className={boxShadow}>
                     <div className={CSS.fill}>
-                        <img class={imageCss} object src={this.props.src} alt={this.props.alt} />
+                        <img className={imageCss} src={this.props.src} alt={this.props.alt} />
                     </div>
                 </div>
                 <div className={CSS.overlay}>
