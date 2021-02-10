@@ -1,251 +1,169 @@
-.menuItemActive {
-    color: Black;
-}
-
-.fill {
+.homeContainer {
+    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    overflow: hidden
-}
-.fill img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-}
-
-.container {
-    position: relative;
-}
-
-.boxShadowRight {
-    box-shadow: 20px 20px #FFCBAE;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    margin-left: 30px;
-}
-
-.boxShadowLeft {
-    box-shadow: -20px 20px #FFCBAE;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0px;
-    left: 30px;
-    right: 50px;
-   
-    opacity: 0;
-    transition: .3s ease;
-    background-color: black;
-}
-  
-.container:hover .overlay {
-    opacity: 0.85;
-}
-
-.overlayText {
-    color: white;
-    font-size: 80px;
-    font-family: 'rockness';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.menuImageDefault {
-    max-width: 100%;
+    flex-flow: column;
 }
 
 /* sm */
-.title {        
-    position: absolute;
-    top: 10%;
-    left: 8%;
-    font-size: 15vw;
-    margin: 0;
-}
-
-.menuImage {
-    height: 300px;
-    width: 100%;
-}
-
-.menuImageHalf {
-    height: 300px;
-    width: 100%;
-}
-
-.itemTitle {
-    width: 100%;
-    font-size: 70px;
-    font-family: 'rockness';
-    text-align: center;
-    margin-top: '20px';
-}
-
-.navText{
-    font-size: 3vw;
-}
-
-.navbar {
-    padding: 0;
-    margin-top: 20px;
+.myName {
+    font-size: 8vw;
+    font-weight: 500;
+    margin-top: 5vw;
 }
 
 .aboutMe {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 30px;
+    margin-top: 3vw;
+}
+
+.aboutMe h3 {
+    font-size: 5vw;
+}
+
+.aboutMe h4 {
+    font-size: 3vw;
+}
+
+.homeBanner {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.homeBannerImageAbout {
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.homeBannerMenu {
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    text-align: center;
+    background-image: url(../assets/banner.PNG);
+    background-repeat: no-repeat;
+    background-size: 90% 120%;
+    background-position: 0 0;
+}
+
+.homeBannerMenu h2{
+    font-size: 5vw;
+    margin-bottom: 1vw;
+}
+
+.homeBannerMenu a {
+    color: #525252;
+    width: 100%;
+}
+
+.homeBannerMenu a:hover {
+    color: #ff8359;
+}
+
+.homeBannerMenuDivider {
+    display: none;
+}
+
+.topSocialBar {
+    float: right;
+    width: 100%;
+}
+
+.bodySocialBar {
+    display: none;
 }
 
 /* md */
 @media (min-width:768px) {
-    .title {        
-        top: 10%;
-        left: 8%;
-        font-size: 12vw;
-    }
-    
-    .menuImage {
-        height: 400px;
-    }
-    
-    .menuImageHalf {
-        height: 400px;
+    .myName {
+        font-size: 7vw;
     }
 
-    .boxShadowRight {
-        margin-right: 50px;
-        margin-left: 30px;
-    }
-    
-    .boxShadowLeft {
-        margin-left: 50px;
-        margin-right: 0px;
-        margin-top: 0;
-    }
-    
-    .overlay {
-        left: 30px;
-        right: 50px;
-    }
-    
-    .overlayText {
-        font-size: 80px;
+    .aboutMe {
+        margin-top: 0.5vw;
     }
 
-    .navbar {
-        float: right;
-        padding: 0;
-        margin-top: -10px;
+    .aboutMe h3 {
+        font-size: 3vw;
+    }
+    
+    .aboutMe h4 {
+        font-size: 2.5vw;
+    }
+    
+    .homeBanner {
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
-    .navText{
-        font-size: 2vw;
+    .homeBannerImageAbout {
+        background-image: url(../assets/banner.PNG);
+        background-repeat: no-repeat;
+        background-size: 90% 80%;
+        background-position: 10vw 0;
+    }
+
+    .homeBannerImageAbout {
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .homeBannerMenuDivider {
+        display: inline;
+        color: #525252;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-bottom: 0;
+    }
+
+    .homeBannerMenu {
+        margin-top: 3vw;
+        justify-content: center;
+        background-image: none;
+    }
+
+    .homeBannerMenu a {
+        width: auto;
+    }
+
+    .homeBannerMenu h2{
+        font-size: 3vw;
+    }
+
+    .topSocialBar {
+        display: none;
+    }
+
+    .bodySocialBar {
+        display: inline;
     }
 }
 
 /* lg */
 @media (min-width:992px) {
-    .title {        
-        top: 15%;
-        font-size: 10vw;
-    }
-
-    .menuImage {
-        height: 700px;
-    }
-    
-    .menuImageHalf {
-        height: 325px;
-    }
-
-    .boxShadowRight {
-        margin-right: 40px;
-        margin-left: 20px;
-    }
-    
-    .boxShadowLeft {
-        margin-left: 50px;
-        margin-right: 0;
-    }
-
-    .homeMenuButtonCol{
-        padding-right: 50px;
-    }
-    
-    .overlay {
-        left: 20px;
-        right: 40px;
-    }
-    
-    .overlayText {
-        font-size: 60px;
-    }
-
-    .itemTitle {
-        width: 0;
-        font-size: 0;
-        margin: 0;
-        padding: 0;
+    .myName {
+        font-size: 6vw;
     }
 
     .aboutMe {
-        margin-left: 12%;
-        margin-right: 0;
+        margin-top: 1vw;
+    }
+
+    .aboutMe h3 {
+        font-size: 2.3vw;
+    }
+    
+    .aboutMe h4 {
+        font-size: 1.6vw;
+    }
+
+    .homeBannerMenu h2{
+        font-size: 2.5vw;
     }
 }
 
 /* xl */
 @media (min-width:1200px) {
-    .title {        
-        position: absolute;
-        top: 20%;
-        left: 8%;
-        font-size: 8vw;
-        margin: 0; 
-    }
-
-    .overlayText {
-        font-size: 80px;
-    }
-
-    .navText{
-        font-size: 1.5vw;
-    }
-}
-
-
-@font-face {
-	font-family: 'geometosregular';
-	src: url('../assets/fonts/geometos_kit/geometos-webfont.woff2') format('woff2'),
-	url('../assets/fonts/geometos_kit/geometos-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'rockness';
-	src: url('../assets/fonts/rockness/Rockness.woff2') format('woff2'),
-	url('../assets/fonts/rockness/Rockness.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'toronto';
-	src: url('../assets/fonts/toronto/toronto.otf') format('opentype');
-	font-weight: normal;
-	font-style: normal;
 }

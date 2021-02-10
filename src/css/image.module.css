@@ -1,0 +1,61 @@
+.menuItemActive {
+    color: Black;
+}
+
+.boxShadowRight {
+    box-shadow: 20px 20px #FFCBAE;
+}
+
+.boxShadowLeft {
+    box-shadow: -20px 20px #FFCBAE;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+
+/* sm */
+.boxShadowLeft {
+    width: 100%;
+    margin-top: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.boxShadowLeft img{
+    width: 100%;
+}
+
+/* md */
+@media (min-width:768px) {
+    .boxShadowRight {
+        margin-right: 50px;
+        margin-left: 30px;
+    }
+    
+    .boxShadowLeft {
+        /* margin-left: 50px; */
+        /* margin-right: 0px;
+        margin-top: 0; */
+        margin-top: 0;
+        width: 100%
+    }
+}
+
+/* lg */
+@media (min-width:992px) {
+    .boxShadowRight {
+        margin-right: 40px;
+        margin-left: 20px;
+    }
+    
+    .boxShadowLeft {
+        width: 100%;
+    }
+}
+
+/* xl */
+@media (min-width:1200px) {
+    .boxShadowLeft {
+        width: 80%;
+    }
+}
