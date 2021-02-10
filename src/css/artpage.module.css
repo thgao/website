@@ -1,0 +1,48 @@
+/* sm */
+.artPageText {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 100%;
+    padding-top: 2vw;
+}
+
+.artPageText h2 {
+    font-size: 5.5vw;
+}
+
+.artPageText h3 {
+    font-size: 3.5vw;
+}
+
+/* md */
+@media (min-width:768px) {
+    .artPageText h2 {
+        font-size: 5vw;
+    }
+    
+    .artPageText h3 {
+        font-size: 3vw;
+    }
+}
+
+/* lg */
+@media (min-width:992px) {
+    .artPageText h2 {
+        font-size: 4vw;
+    }
+    
+    .artPageText h3 {
+        font-size: 2.5vw;
+    }
+}
+
+/* xl */
+@media (min-width:1200px) {
+    .artPageText h2 {
+        font-size: 3.5vw;
+    }
+    
+    .artPageText h3 {
+        font-size: 1.8vw;
+    }
+}

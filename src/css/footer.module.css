@@ -1,0 +1,33 @@
+/* sm */
+.footer {
+    /* margin-top: 3vw; */
+    height: 4.5vw;
+    width: 100%;
+    font-size: 2vw;
+    text-align: center;
+}
+
+/* md */
+@media (min-width:768px) {
+    .footer {
+        margin-top: 3vw;
+        height: 2.5vw;
+        font-size: 1.5vw;
+
+    }
+}
+
+/* lg */
+@media (min-width:992px) {
+    .footer {
+        margin-top: 3vw;
+        height: 2.5vw;
+        font-size: 1vw;
+
+    }
+    
+}
+
+/* xl */
+@media (min-width:1200px) {
+}

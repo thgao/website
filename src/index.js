@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './css/index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import {HashRouter as Router, Route } from 'react-router-dom';
-import Home from './Home';
-import Digital from './Digital';
-import Traditional from './Traditional';
-import Photography from './Photography';
-import withTracker from './withTracker';
+import Home from './components/pages/Home';
+import Digital from './components/pages/Digital';
+import Traditional from './components/pages/Traditional';
+import Photography from './components/pages/Photography';
+import withTracker from './components/withTracker';
 
 ReactDOM.render(
   <Router hashType="noslash">
