@@ -13,7 +13,7 @@ class Home extends Component {
             <div className={CSS.homeContainer}>
                 <div className={CSS.homeBanner}>
                     <div>
-                        <Row className={CSS.homeBannerImageAbout}>
+                        <Row noGutters className={CSS.homeBannerImageAbout}>
                             <div className={CSS.topSocialBar}>
                                 <SocialBar/>
                             </div>
@@ -34,7 +34,7 @@ class Home extends Component {
                                 </div>
                             </Col>
                         </Row>
-                        <Row className={CSS.homeBannerMenu}>
+                        <Row noGutters className={CSS.homeBannerMenu}>
                             <Link to="/traditional">
                                 <h2>traditional art</h2>
                             </Link>
