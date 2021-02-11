@@ -7,7 +7,7 @@
 
 /* sm */
 .myName {
-    font-size: 8vw;
+    font-size: 15vw;
     font-weight: 500;
     margin-top: 5vw;
 }
@@ -17,17 +17,16 @@
 }
 
 .aboutMe h3 {
-    font-size: 5vw;
+    font-size: 8vw;
 }
 
 .aboutMe h4 {
-    font-size: 3vw;
+    font-size: 5vw;
 }
 
 .homeBanner {
     flex: 1 1 auto;
     display: flex;
-    align-items: center;
     padding: 0;
 }
 
@@ -38,7 +37,7 @@
 }
 
 .homeBannerMenu {
-    margin-top: 2vw;
+    margin-top: 5vw;
     margin-bottom: 3vw;
     text-align: center;
     background-image: url(../assets/banner.PNG);
@@ -48,7 +47,7 @@
 }
 
 .homeBannerMenu h2{
-    font-size: 5vw;
+    font-size: 8vw;
     margin-bottom: 1vw;
 }
 
@@ -95,6 +94,7 @@
     .homeBanner {
         padding-left: 10vw;
         padding-right: 10vw;
+        align-items: center;
     }
 
     .homeBannerImageAbout {
