@@ -1,9 +1,9 @@
 /* sm */
 .footer {
     /* margin-top: 3vw; */
-    height: 4.5vw;
+    height: 4vw;
     width: 100%;
-    font-size: 2vw;
+    font-size: 4vw;
     text-align: center;
 }
 
@@ -23,9 +23,7 @@
         margin-top: 3vw;
         height: 2.5vw;
         font-size: 1vw;
-
     }
-    
 }
 
 /* xl */
