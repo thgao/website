@@ -10,12 +10,12 @@ import Photography from './components/pages/Photography';
 import withTracker from './components/withTracker';
 
 ReactDOM.render(
-  <Router hashType="noslash">
+  <Router>
 	  <main>
-		  <Route exact path='/' component={withTracker(Home)}/>
-      <Route exact path='/traditional' component={withTracker(Traditional)}/>
-      <Route exact path='/digital' component={withTracker(Digital)}/>
-      <Route exact path='/photography' component={withTracker(Photography)}/>
+		  <Route basename="/website" exact path='/' component={withTracker(Home)}/>
+      <Route basename="/website" exact path='/traditional' component={withTracker(Traditional)}/>
+      <Route basename="/website" exact path='/digital' component={withTracker(Digital)}/>
+      <Route basename="/website" exact path='/photography' component={withTracker(Photography)}/>
 	  </main>
 	</Router>,
   document.getElementById('root')
