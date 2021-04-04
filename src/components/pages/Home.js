@@ -13,7 +13,7 @@ class Home extends Component {
             <div className={CSS.homeContainer}>
                 <div className={CSS.homeBanner}>
                     <div>
-                        <Row noGutters className={CSS.homeBannerImageAbout}>
+                        <Row className={CSS.homeBannerImageAbout}>
                             <div className={CSS.topSocialBar}>
                                 <SocialBar/>
                             </div>
@@ -22,11 +22,11 @@ class Home extends Component {
                                     <ImageShadow src={ProfilePicture} alt="Tina Gao" left/>
                                 </div>
                             </Col>
-                            <Col md="7">
+                            <Col className={CSS.homeAboutSection} md="7">
                                 <h1 className={CSS.myName}>Tina Gao</h1>
                                 <div className={CSS.aboutMe} >
                                     <h3>about me</h3>
-                                    <h4>I'm a software engineer with an interest in product design. I'm passionate about working on products that shape how users interact with and think about the tools that they already have. </h4>
+                                    <h4>I'm a software engineer with an interest in human computer interaction. I'm passionate about working on products that shape how users interact with and think about the tools that they already have. </h4>
                                     <h4>In my free time, I love working on art and design projects. Click on a category to view some of my paintings, digital drawings, photography, and more!</h4>
                                 </div>
                                 <div className={CSS.bodySocialBar}>

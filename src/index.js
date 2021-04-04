@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './css/index.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import './css/index.css';
 import {BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
 import Digital from './components/pages/Digital';
